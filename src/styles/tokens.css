@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
- Cambiar esto a otro lugar*/
 :root {
    /*BASES DES COULEURS*/
    --color-neutral-black : #000;
@@ -33,8 +31,8 @@
 
 
    /* BASES DE SPACING */
-   --btn-padding-ms: 8px 12px;
-   --btn-padding-xs: 8px;
+   --spacing-sm: 8px;
+   --spacing-md: 12px;
    --btn-gap-ms: 8px;
    --btn-gap-xs: 4px;
 
@@ -51,14 +49,14 @@
    --btn-border-color-dark: rgba(0, 0, 0, 0.3);
 
    
-   /* VARIANTES DE BACKGROUD */
-   --btn-bg-primary-def: var(--color-green-light);
+   /* VARIANTES DE BACKGROUND */
+   --btn-bg-primary-default: var(--color-green-light);
    --btn-bg-primary-hover: var(--color-green-dark);
-   --btn-bg-secondary-def: var(--color-neutral-white);
+   --btn-bg-secondary-default: var(--color-neutral-white);
    --btn-bg-secondary-hover: var(--color-grey-100);
-   --btn-bg-ghost-def: transparent;
+   --btn-bg-ghost-default: transparent;
    --btn-bg-ghost-hover: var(--color-grey-100);
-   --btn-bg-destructive-def: var(--color-red-light);
+   --btn-bg-destructive-default: var(--color-red-light);
    --btn-bg-destructive-hover: var(--color-red-dark);
    
    
