@@ -11,13 +11,6 @@
    --color-red-dark: #b42318;
    --color-red-light: #d92d20;
 
-   /* BASES DE TAILLE */
-   --btn-sz-width-ms: 153px;
-   --btn-sz-height-m: 40px;
-   --btn-sz-height-s: 36px;
-   --btn-sz-width-xs: 119px;
-   --btn-sz-height-xs: 34px;
-
    /* BASES DE TYPOGRAPHIE */
    --text-color-default: var(--color-grey-900);
    --text-color-inverted: var(--color-neutral-white);
@@ -30,10 +23,17 @@
 
 
    /* BASES DE SPACING */
-   --padding-sm: 8px;
-   --padding-md: 12px;
+   --padding-ms: 8px 12px;
+   --padding-xs: 8px;
    --btn-gap-ms: 8px;
    --btn-gap-xs: 4px;
+
+   /* BASES DE TAILLE */
+   --btn-sz-width-ms: 153px;
+   --btn-sz-height-m: 40px;
+   --btn-sz-height-s: 36px;
+   --btn-sz-width-xs: 119px;
+   --btn-sz-height-xs: 34px;
 
 
    /* BASES DE SHADOWS */
