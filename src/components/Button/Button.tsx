@@ -37,10 +37,10 @@ export default function Button ({
       disabled={disabled}
       onClick={onClick}
     >
-      {leadingIcon && <span className="btn_icon">{leadingIcon}</span>}
+      {leadingIcon && <span className="leading-icon">{leadingIcon}</span>}
       {!iconOnly && children}
-      {trailingIcon && <span className="btn_icon">{trailingIcon}</span>}
-      {badge !== undefined && <span className="btn_badge">{badge}</span>}
+      {trailingIcon && <span className="trailing-icon">{trailingIcon}</span>}
+      {badge !== undefined && <span className="badge">{badge}</span>}
     </button>
     )
 }
