@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.btn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--btn-font-family);
+    font-weight: var(--btn-font-weight);
+    font-size: var(--btn-font-sz-ms);
+    line-height: var(--line-height-ms);
+    gap: var(--btn-gap-ms);
+    border-radius: 8px;
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* TAILLES */
+
+.btn--m {
+    padding: var(--padding-sm) var(--padding-md),
+
+
+}
+
+.btn--s {
+
+}
+
+.btn--xs {
+
+}
+
+/* PRIMARY */
+
+.btn--primary {
+
+}
+
+.btn--primary:hover {
+
+}
+
+.btn--primary:focus-visible {
+
+}
+
+.btn--primary:disabled {
+
+}
+
+/* SECONDARY */
+
+.btn--secondary {
+
+}
+
+.btn--secondary:hover {
+
+}
+
+.btn--secondary:focus-visible {
+
+}
+
+.btn--secondary:disabled {
+
+}
+
+/* GHOST */
+
+.btn--ghost {
+
+}
+
+.btn--ghost:hover {
+
+}
+
+.btn--ghost:focus-visible {
+
+}
+
+.btn--ghost:disabled {
+
+}
+
+/* DESTRUCTIVE */
+
+.btn--destructive {
+
+}
+
+.btn--destructive:hover {
+
+}
+
+.btn--destructive:focus-visible {
+
+}
+
+.btn--destructive:disabled {
+
+}
+
+/* ICON ONLY */
+
+.btn--icon-only {
+
+}
+
+.btn--icon-only-primary {
+
+}
+
+.btn--icon-only-primary:hover {
+
+}
+
+.btn--icon-only-primary:focus-visible {
+
+}
+
+.btn--icon-only-primary:disabled {
+
+}
+
+/* ICON ONLY SECONDARY */
+
+.btn--icon-only-secondary {
+
+}
+
+.btn--icon-only-secondary:hover {
+
+}
+
+.btn--icon-only-secondary:focus-visible {
+
+}
+
+.btn--icon-only-secondary:disabled {
+
+}
+
+/* ICON ONLY ALPHA DARK */
+
+.btn--icon-only-alpha-dark {
+
+}
+
+.btn--icon-only-alpha-dark:hover {
+
+}
+
+.btn--icon-only-alpha-dark:focus-visible {
+
+}
+
+.btn--icon-only-alpha-dark:disabled {
+
+}
+
+/* ICON ONLY ALPHA LIGHT */
+
+.btn--icon-only-alpha-light {
+
+}
+
+.btn--icon-only-alpha-light:hover {
+
+}
+
+.btn--icon-only-alpha-light:focus-visible {
+
+}
+
+.btn--icon-only-alpha-light:disabled {
+
+}
+
+/* STYLE DU ICONE ET DE LA BADGE DANS LE BOUTON */
+
+.btn_icon {
+
+}
+
+.btn_badge {
+
+}
