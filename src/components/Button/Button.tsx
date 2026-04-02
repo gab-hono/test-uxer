@@ -4,8 +4,8 @@ interface ButtonProps {
     variant: "primary" | "secondary" | "ghost" | "destructive" | "alpha-dark" | "alpha-light";
     size: "m" | "s" | "xs";
     disabled: boolean;
-    leftIcon?: React.ReactNode;
-    rightIcon?: React.ReactNode;
+    leadingIcon?: React.ReactNode;
+    trailingIcon?: React.ReactNode;
     badge?: number;
     iconOnly: boolean;
     onClick: () => void;
@@ -16,8 +16,8 @@ export default function Button ({
     variant = "primary",
     size = "m",
     disabled = false,
-    leftIcon,
-    rightIcon,
+    leadingIcon,
+    trailingIcon,
     badge,
     iconOnly = false,
     onClick,
@@ -37,9 +37,9 @@ export default function Button ({
       disabled={disabled}
       onClick={onClick}
     >
-      {leftIcon && <span className="btn_icon">{leftIcon}</span>}
+      {leadingIcon && <span className="btn_icon">{leadingIcon}</span>}
       {!iconOnly && children}
-      {rightIcon && <span className="btn_icon">{rightIcon}</span>}
+      {trailingIcon && <span className="btn_icon">{trailingIcon}</span>}
       {badge !== undefined && <span className="btn_badge">{badge}</span>}
     </button>
     )
