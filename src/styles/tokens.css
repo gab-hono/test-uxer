@@ -26,13 +26,12 @@
    --line-height-ms: 20px;
    --line-height-xs: 18px;
    --btn-font-family: 'Inter', sans-serif;
-
    --btn-font-weight: 500; 
 
 
    /* BASES DE SPACING */
-   --spacing-sm: 8px;
-   --spacing-md: 12px;
+   --padding-sm: 8px;
+   --padding-md: 12px;
    --btn-gap-ms: 8px;
    --btn-gap-xs: 4px;
 
