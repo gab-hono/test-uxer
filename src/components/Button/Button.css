@@ -11,6 +11,8 @@
     line-height: var(--line-height-ms);
     gap: var(--btn-gap-ms);
     border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
 }
 
 .btn:disabled {
@@ -22,41 +24,52 @@
 /* TAILLES */
 
 .btn--m {
-    padding: var(--padding-sm) var(--padding-md),
-
-
+    padding: var(--padding-ms);
+    height: var(--btn-sz-height-m);
 }
 
 .btn--s {
-
+    padding: var(--padding-ms);
+    height: var(--btn-sz-height-s);
 }
 
 .btn--xs {
-
+    height: --btn-sz-width-xs;
+    padding: var(--padding-xs);
+    gap: var(--btn-gap-xs);
+    font-size: var(--font-sz-xs);
+    line-height: var(--line-height-xs);
 }
 
 /* PRIMARY */
 
 .btn--primary {
-
+    background-color: var(--btn-bg-primary-default);
+    color: var(--text-color-inverted);
+    border: var(--btn-border-width) solid var(--btn-border-color-dark);
+    box-shadow: var(--btn-shadow-bottom-xs);
 }
 
 .btn--primary:hover {
-
+    background-color: var(--btn-bg-primary-hover);
 }
 
 .btn--primary:focus-visible {
-
+    outline: none;
+    box-shadow: var(--btn-focus-ring-primary);
 }
 
 .btn--primary:disabled {
-
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 /* SECONDARY */
 
 .btn--secondary {
-
+    background-color: var(--btn-bg-secondary-default);
+    color: var(--text-color-default);
 }
 
 .btn--secondary:hover {
@@ -110,85 +123,125 @@
 /* ICON ONLY */
 
 .btn--icon-only {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: var(--btn-shadow-bottom-xs);
 
 }
 
 .btn--icon-only-primary {
-
+    background-color: var(--btn-bg-primary-default);
+    border: 1px solid var(--btn-border-color-dark);
 }
 
 .btn--icon-only-primary:hover {
-
+    background-color: --btn-bg-primary-hover;
 }
 
 .btn--icon-only-primary:focus-visible {
-
+    box-shadow: var(--btn-focus-ring-primary);
 }
 
 .btn--icon-only-primary:disabled {
-
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 /* ICON ONLY SECONDARY */
 
 .btn--icon-only-secondary {
-
+    background-color: var(--btn-bg-secondary-default);
+    border: 1px solid var(--btn-border-color-secondary);
 }
 
 .btn--icon-only-secondary:hover {
-
+    background-color: --btn-bg-secondary-hover;
 }
 
 .btn--icon-only-secondary:focus-visible {
-
+    box-shadow: --btn-focus-ring-primary;
 }
 
 .btn--icon-only-secondary:disabled {
-
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 /* ICON ONLY ALPHA DARK */
 
 .btn--icon-only-alpha-dark {
-
+    background-color:rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
 .btn--icon-only-alpha-dark:hover {
-
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .btn--icon-only-alpha-dark:focus-visible {
-
+    box-shadow: var(--btn-focus-ring-primary);
 }
 
 .btn--icon-only-alpha-dark:disabled {
-
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 /* ICON ONLY ALPHA LIGHT */
 
 .btn--icon-only-alpha-light {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
 
 }
 
 .btn--icon-only-alpha-light:hover {
-
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .btn--icon-only-alpha-light:focus-visible {
-
+    box-shadow: var(--btn-focus-ring-primary);
 }
 
 .btn--icon-only-alpha-light:disabled {
-
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 /* STYLE DU ICONE ET DE LA BADGE DANS LE BOUTON */
 
-.btn_icon {
-
+.leading-icon .trailing-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 20px;
+    height: 20px;
 }
 
-.btn_badge {
-
+.badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 5px;
+    gap: 8px;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
