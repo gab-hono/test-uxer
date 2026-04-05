@@ -14,8 +14,8 @@
    /* BASES DE TYPOGRAPHIE */
    --text-color-default: var(--color-grey-900);
    --text-color-inverted: var(--color-neutral-white);
-   --font-sz-ms: 14px;
-   --font-sz-xs: 13px;
+   --btn-font-sz-ms: 14px;
+   --btn-font-sz-xs: 13px;
    --line-height-ms: 20px;
    --line-height-xs: 18px;
    --btn-font-family: 'Inter', sans-serif;
