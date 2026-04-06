@@ -2,8 +2,8 @@ import type React from "react";
 import "./Button.css"
 
 interface ButtonProps {
-    variant: "primary" | "secondary" | "ghost" | "destructive" | "alpha-dark" | "alpha-light";
-    size: "m" | "s" | "xs";
+    variant?: "primary" | "secondary" | "ghost" | "destructive" | "alpha-dark" | "alpha-light";
+    size?: "m" | "s" | "xs";
     disabled?: boolean;
     leadingIcon?: React.ReactNode;
     trailingIcon?: React.ReactNode;
