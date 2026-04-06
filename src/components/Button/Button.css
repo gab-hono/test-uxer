@@ -120,6 +120,7 @@
     height: 40px;
     border-radius: 8px;
     box-shadow: var(--btn-shadow-bottom-xs);
+    color: var(--color-neutral-white);
 }
 
 .btn--icon-only:focus-visible {
@@ -147,6 +148,7 @@
 .btn--icon-only-secondary {
     background-color: var(--btn-bg-secondary-default);
     border: 1px solid var(--btn-border-color-secondary);
+    color: var(--color-grey-500);
 }
 
 .btn--icon-only-secondary:hover {
