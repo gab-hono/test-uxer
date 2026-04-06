@@ -1,38 +1,72 @@
+// src/App.tsx
+
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Button from './components/Button/Button'
+import ButtonGroup from './components/Button/ButtonGroup'
 import { CheckIcon } from './components/Icons/CheckIcon'
 import { FilterIcon } from './components/Icons/FilterIcon'
+import { SettingsIcon } from './components/Icons/SettingsIcon'
+import { TrashIcon } from './components/Icons/TrashIcon'
+import Test from './pages/Test'
 
 function App() {
-
   return (
-    <>
-    <ul>
-      <h1>Liste des Boutons</h1>
-      <li>
-        <h2>Bouton primaire avec "Check" icon à gauche</h2>
-        <Button
-          variant='primary'
-          size='m'
-          leadingIcon = {<CheckIcon />}
-          >
-            Valider
-        </Button>   
-      </li>
+    <Routes>
 
-      <li>
-        <h2>Bouton secondaire avec "filter" icon à gauche et badge avec numéro 3</h2>
-        <Button 
-          variant='secondary'
-          size='m'
-          leadingIcon = {<FilterIcon />}
-          badge={3}>
-            Filter
-          </Button>
-      </li>
-    </ul>
-    </>
+      <Route path="/" element={
+        <main>
+          <h1>Démo des composants</h1>
 
+          <nav aria-label="Navigation principale">
+            <Link to="/test">
+              <Button variant="secondary" size="m">
+                Voir tous les boutons
+              </Button>
+            </Link>
+          </nav>
+
+          <section aria-labelledby="exemples-titre">
+            <h2 id="exemples-titre">Exemples de boutons</h2>
+
+            <div>
+              <h3>Bouton primaire avec icône de validation</h3>
+              <Button variant="primary" size="m" leadingIcon={<CheckIcon />}>
+                Valider
+              </Button>
+            </div>
+
+            <div>
+              <h3>Bouton secondaire avec filtre et badge</h3>
+              <Button variant="secondary" size="m" leadingIcon={<FilterIcon />} badge={3}>
+                Filtrer
+              </Button>
+            </div>
+
+            <div>
+              <h3>Bouton groupe destructif</h3>
+              <ButtonGroup variant="destructive" size="m" addonIcon={<SettingsIcon />}>
+                Supprimer
+              </ButtonGroup>
+            </div>
+
+            <div>
+              <h3>Bouton icône seul (suppression)</h3>
+              <Button
+                variant="secondary"
+                iconOnly
+                leadingIcon={<TrashIcon />}
+                aria-label="Supprimer"
+              />
+            </div>
+          </section>
+        </main>
+      } />
+
+      <Route path="/test" element={<Test />} />
+
+    </Routes>
   )
 }
 
