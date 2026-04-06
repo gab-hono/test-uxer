@@ -1,4 +1,6 @@
 import type React from "react";
+import './ButtonGroup.css'
+import './Button.css'
 
 interface ButtonGroupProps {
     variant: "primary" | "secondary" | "destructive";
