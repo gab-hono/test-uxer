@@ -171,7 +171,46 @@ Pour la démo :
 
 ## Bugs à corriger (lundi 06 avril)
 
-* Le Button Group ne s’affiche pas correctement → vérifier les propriétés CSS
-* Les icônes SVG ne sont pas fidèles au modèle Figma → corriger les composants “Icons”
-* L’icône dans “icon-only--primary” n’a pas la bonne couleur → utiliser `var(--color-neutral-white)`
-* L’état `focus` ne fonctionne pas correctement
+ [] Le Button Group ne s’affiche pas correctement → vérifier les propriétés CSS
+ [] Les icônes SVG ne sont pas fidèles au modèle Figma → corriger les composants “Icons”
+ [] L’icône dans “icon-only--primary” n’a pas la bonne couleur → utiliser `var(--color-neutral-white)`
+ [] L’état `focus` ne fonctionne pas correctement
+
+ ---
+ Aquí tienes la continuación en francés, manteniendo tu estilo y coherencia con el README 👇
+
+---
+
+## Solutions
+
+**Les icônes SVG ne sont pas fidèles au modèle Figma → corriger les composants “Icons”**
+En explorant plus en détail le fichier Figma fourni, je me suis rendu compte qu’il y avait une page “icônes” où se trouvait la librairie utilisée dans le projet, provenant de Phosphor Icons.
+
+J’ai lu la documentation pour comprendre comment utiliser ces icônes dans mon projet, puis j’ai installé Phosphor Icons dans mon projet React et importé un par un les icônes nécessaires pour le moment.
+
+Si par la suite on souhaite utiliser de nouvelles icônes de la librairie, il suffit de les importer en haut du fichier, comme montré ci-dessous :
+
+```ts
+import { CheckIcon, TrashIcon, SlidersHorizontalIcon, GearSixIcon } from "@phosphor-icons/react/dist/ssr"
+```
+
+---
+
+**L’icône dans “icon-only--primary” n’a pas la bonne couleur → utiliser `var(--color-neutral-white)`**
+Je n’avais pas utilisé la bonne variable dans la spécification de la sous-classe.
+C’est maintenant corrigé et fonctionnel.
+
+---
+
+**Correction du CSS de ButtonGroup**
+
+* J’ai mis `margin: 0` et `border: none` sur `.btn-group .btn`, afin de supprimer le bord propre au bouton et prioriser celui du conteneur
+* Sur `.btn-group--addon`, j’ai ajouté `align-self: stretch`, ce qui permet à l’élément d’occuper correctement l’espace disponible et d’éviter qu’il apparaisse comme un carré isolé dans la div
+* J’ai également supprimé ses bordures (`border: none`) et son `border-radius`
+
+---
+
+**Améliorations globales du CSS**
+
+* J’ai ajouté un `margin: 2px` entre les boutons pour la démo, afin qu’ils ne soient pas collés entre eux et soient plus lisibles
+* J’ai ajouté `justify-content: center` dans `.leading-icon` et `.trailing-icon`, car l’absence de cette propriété faisait que l’icône était légèrement décalée vers la gauche dans les boutons en mode `iconOnly`
