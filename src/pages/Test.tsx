@@ -2,11 +2,8 @@
 
 import Button from "../components/Button/Button"
 import ButtonGroup from "../components/Button/ButtonGroup"
-import { CheckIcon } from "../components/Icons/CheckIcon"
-import { FilterIcon } from "../components/Icons/FilterIcon"
-import { SettingsIcon } from "../components/Icons/SettingsIcon"
-import { TrashIcon } from "../components/Icons/TrashIcon"
 import { Link } from "react-router-dom"
+import { CheckIcon, TrashIcon, SlidersHorizontalIcon, GearSixIcon } from "@phosphor-icons/react/dist/ssr"
 
 export default function Test() {
     return (
@@ -33,7 +30,7 @@ export default function Test() {
                 <Button
                     variant="primary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
                     badge={3}
                 >
@@ -42,7 +39,7 @@ export default function Test() {
                 <Button
                     variant="primary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
                     badge={3}
                     disabled
@@ -55,7 +52,7 @@ export default function Test() {
                 <Button
                     variant="secondary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
                     badge={3}
                 >
@@ -64,7 +61,7 @@ export default function Test() {
                 <Button
                     variant="secondary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
                     badge={3}
                     disabled
@@ -76,7 +73,7 @@ export default function Test() {
                 <Button
                     variant="ghost"
                     size="m"
-                    leadingIcon={<FilterIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
                     badge={3}
                 >
@@ -85,7 +82,7 @@ export default function Test() {
                 <Button
                     variant="ghost"
                     size="m"
-                    leadingIcon={<FilterIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
                     badge={3}
                     disabled
@@ -119,11 +116,12 @@ export default function Test() {
                 <h2 id="groupes-titre">Boutons en groupe</h2>
 
                 <h3>Primaire</h3>
+                <div style={{ padding: "16px", borderRadius: "8px", display: "inline-flex", gap: "8px" }}>
                 <ButtonGroup
                     variant="primary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
-                    addonIcon={<SettingsIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
+                    addonIcon={<GearSixIcon />}
                     badge={3}
                 >
                     Button
@@ -131,20 +129,22 @@ export default function Test() {
                 <ButtonGroup
                     variant="primary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
-                    addonIcon={<SettingsIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
+                    addonIcon={<GearSixIcon />}
                     badge={3}
                     disabled
                 >
                     Button
                 </ButtonGroup>
+                </div>
 
                 <h3>Secondaire</h3>
+                <div style={{ padding: "16px", borderRadius: "8px", display: "inline-flex", gap: "8px" }}>
                 <ButtonGroup
                     variant="secondary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
-                    addonIcon={<SettingsIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
+                    addonIcon={<GearSixIcon />}
                     badge={3}
                 >
                     Button
@@ -152,20 +152,22 @@ export default function Test() {
                 <ButtonGroup
                     variant="secondary"
                     size="m"
-                    leadingIcon={<FilterIcon />}
-                    addonIcon={<SettingsIcon />}
+                    leadingIcon={<SlidersHorizontalIcon />}
+                    addonIcon={<GearSixIcon />}
                     badge={3}
                     disabled
                 >
                     Button
                 </ButtonGroup>
+                </div>
 
                 <h3>Destructive</h3>
+                <div style={{ padding: "16px", borderRadius: "8px", display: "inline-flex", gap: "8px" }}>
                 <ButtonGroup
                     variant="destructive"
                     size="m"
                     leadingIcon={<TrashIcon />}
-                    addonIcon={<SettingsIcon />}
+                    addonIcon={<GearSixIcon />}
                     badge={3}
                 >
                     Button
@@ -174,68 +176,77 @@ export default function Test() {
                     variant="destructive"
                     size="m"
                     leadingIcon={<TrashIcon />}
-                    addonIcon={<SettingsIcon />}
+                    addonIcon={<GearSixIcon />}
                     badge={3}
                     disabled
                 >
                     Button
                 </ButtonGroup>
+                </div>
             </section>
 
             <section aria-labelledby="icononly-titre">
                 <h2 id="icononly-titre">Icon Only</h2>
 
                 <h3>Primaire</h3>
+                <div style={{ padding: "16px", borderRadius: "8px", display: "inline-flex", gap: "8px" }}>
                 <Button
                     variant="primary"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                 />
                 <Button
                     variant="primary"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                     disabled
                 />
+                </div>
 
                 <h3>Secondaire</h3>
+                <div style={{ padding: "16px", borderRadius: "8px", display: "inline-flex", gap: "8px" }}>
                 <Button
                     variant="secondary"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                 />
                 <Button
                     variant="secondary"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                     disabled
                 />
+                </div>
 
                 <h3>Alpha Dark</h3>
+                <div style={{ padding: "16px", borderRadius: "8px", display: "inline-flex", gap: "8px" }}>
                 <Button
                     variant="alpha-dark"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                 />
                 <Button
                     variant="alpha-dark"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                     disabled
                 />
+                </div>
 
                 <h3>Alpha Light</h3>
+                <div style={{ backgroundColor: "#171717", padding: "16px", borderRadius: "8px", display: "inline-flex", gap: "8px" }}>
                 <Button
                     variant="alpha-light"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                 />
                 <Button
                     variant="alpha-light"
                     iconOnly
-                    leadingIcon={<SettingsIcon />}
+                    leadingIcon={<GearSixIcon />}
                     disabled
                 />
+                </div>
             </section>
         </main>
     )
