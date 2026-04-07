@@ -5,11 +5,9 @@ import { Routes, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Button from './components/Button/Button'
 import ButtonGroup from './components/Button/ButtonGroup'
-import { CheckIcon } from './components/Icons/CheckIcon'
-import { FilterIcon } from './components/Icons/FilterIcon'
-import { SettingsIcon } from './components/Icons/SettingsIcon'
-import { TrashIcon } from './components/Icons/TrashIcon'
 import Test from './pages/Test'
+import { CheckIcon, TrashIcon, SlidersHorizontalIcon, GearSixIcon } from "@phosphor-icons/react/dist/ssr"
+
 
 function App() {
   return (
@@ -39,14 +37,14 @@ function App() {
 
             <div>
               <h3>Bouton secondaire avec filtre et badge</h3>
-              <Button variant="secondary" size="m" leadingIcon={<FilterIcon />} badge={3}>
+              <Button variant="secondary" size="m" leadingIcon={<SlidersHorizontalIcon />} badge={3}>
                 Filtrer
               </Button>
             </div>
 
             <div>
               <h3>Bouton groupe destructif</h3>
-              <ButtonGroup variant="destructive" size="m" addonIcon={<SettingsIcon />}>
+              <ButtonGroup variant="destructive" size="m" addonIcon={<GearSixIcon />}>
                 Supprimer
               </ButtonGroup>
             </div>
