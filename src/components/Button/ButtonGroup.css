@@ -7,6 +7,14 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--btn-shadow-bottom-xs);
+    margin: 2px;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    margin: 0;
 }
 
 .btn-group--disabled {
@@ -30,6 +38,9 @@
     align-items: center;
     padding: 8px 12px;
     flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 0;
+    border: none;
 }
 
 .btn-group--primary .btn-group__addon {
