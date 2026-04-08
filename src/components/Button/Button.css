@@ -90,7 +90,7 @@
 }
 
 .btn--ghost:focus-visible {
-    background: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
     outline: none;
     box-shadow: var(--btn-focus-ring-primary);
 }
@@ -200,7 +200,6 @@
     align-items: center;
     padding: 8px 5px;
     gap: 8px;
-    width: 20px;
     min-width: 20px;
     height: 20px;
     background: rgba(0, 0, 0, 0.1);
