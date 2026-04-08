@@ -5,13 +5,17 @@
     flex-direction: row;
     align-items: center;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: var(--btn-shadow-bottom-xs);
     margin: 2px;
+    outline: 3px solid transparent;
+}
+
+.btn-group:focus-within {
+    outline: 3px solid rgba(0, 0, 0, 0.12);
 }
 
 .btn-group .btn {
-    border-radius: 0;
+    border-radius: 8px 0 0 8px;
     box-shadow: none;
     border: none;
     margin: 0;
@@ -39,8 +43,12 @@
     padding: 8px 12px;
     flex-shrink: 0;
     align-self: stretch;
-    border-radius: 0;
+    border-radius: 0 8px 8px 0;
     border: none;
+}
+
+.btn-group__addon:disabled {
+    opacity: 0.4;
 }
 
 .btn-group--primary .btn-group__addon {
@@ -71,4 +79,10 @@
 
 .btn-group--destructive .btn-group__addon:hover {
     background-color: var(--btn-bg-destructive-hover);
+}
+
+.btn-group .btn:focus-visible,
+.btn-group .btn-group__addon:focus-visible {
+    outline: none;
+    box-shadow: none;
 }
