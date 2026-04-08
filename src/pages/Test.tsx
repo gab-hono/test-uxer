@@ -32,7 +32,7 @@ export default function Test() {
                     size="m"
                     leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
-                    badge={3}
+                    badge={5}
                 >
                     Button
                 </Button>
@@ -41,7 +41,7 @@ export default function Test() {
                     size="m"
                     leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
-                    badge={3}
+                    badge={30}
                     disabled
                     aria-disabled="true"
                 >
@@ -54,7 +54,7 @@ export default function Test() {
                     size="m"
                     leadingIcon={<SlidersHorizontalIcon />}
                     trailingIcon={<CheckIcon />}
-                    badge={3}
+                    badge={400}
                 >
                     Button
                 </Button>
