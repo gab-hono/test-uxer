@@ -5,6 +5,16 @@
 En utilisant React, développer un composant Bouton fidèle aux spécifications du design Figma. Privilégier une approche orientée props afin de rendre le composant flexible et réutilisable.
 
 ---
+## Instalation et lancement
+
+Cloner le repo -> npm install -> npm run dev
+
+Pages disponibles :
+
+/ — page principale avec exemples de boutons
+/test — page de démonstration complète de toutes les variantes
+
+Vous pouvez modifier les props des boutons pour les tester dans les pages "App.tsx" et "Test.tsx" du projet React.
 
 ## *Mon pas à pas*
 
@@ -214,3 +224,13 @@ C’est maintenant corrigé et fonctionnel.
 
 * J’ai ajouté un `margin: 2px` entre les boutons pour la démo, afin qu’ils ne soient pas collés entre eux et soient plus lisibles
 * J’ai ajouté `justify-content: center` dans `.leading-icon` et `.trailing-icon`, car l’absence de cette propriété faisait que l’icône était légèrement décalée vers la gauche dans les boutons en mode `iconOnly`
+
+---
+
+## Conclusion
+
+Ce test m'a permis de parcourir un flux complet que je n'avais pas encore pratiqué dans son intégralité : de la lecture d'un fichier Figma jusqu'à un composant React réutilisable et accessible, en passant par la création d'un système de tokens CSS.
+
+Ce que je retiens comme apprentissage principal, c'est que traduire un design en code n'est pas une transcription mécanique. Chaque décision, comme nommer une variable, choisir un sélecteur CSS, ou encore structurer une interface TypeScript, implique de comprendre l'intention derrière le design, et pas seulement ses valeurs visuelles.
+
+Ce qui m'a posé le plus de difficultés, c'est d'abord le fait de travailler en totale autonomie, ce qui m'a obligé à chercher des ressources par moi-même pour résoudre mes problématiques. C'est aussi la familiarisation avec le concept des **props** et la gestion du ButtonGroup, notamment la nécessité d'avoir une séparation claire des classes CSS entre le composant principal et ses sous-éléments.
